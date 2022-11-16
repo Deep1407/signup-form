@@ -22,7 +22,7 @@ document.forms["signup"].addEventListener("submit", function(e){
     var img = document.getElementsByTagName("img");
     var warning= document.getElementsByClassName("warning");
 
-    for(var i = 1; i<=inputs.length; i++){
+    for(var i = 0; i<inputs.length; i++){
         if(!inputs[i].value){
             erreur = warning[i].style.display = "block";
             img[i].style.display = "block";
